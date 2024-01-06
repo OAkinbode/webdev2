@@ -66,7 +66,7 @@ Rename `.env.example` to `.env.local` and update the values. Due to the way Next
 
 ## Current Deployment
 
-The application is currently deployed to: https://webdev2-2qkbuvatp-oakinbode.vercel.app/
+The application is currently deployed to: https://webdev2-seven.vercel.app/
 
 ## Miscellaneous
 
