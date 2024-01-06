@@ -64,6 +64,10 @@ This course uses Microsoft Forms for survery and project submissions. You will n
 
 Rename `.env.example` to `.env.local` and update the values. Due to the way Nextra works, these values are not available in the places you already manually updated above.
 
+## Current Deployment
+
+The application is currently deployed to: https://webdev2-2qkbuvatp-oakinbode.vercel.app/
+
 ## Miscellaneous
 
 - The build script has been modified to copy the slides to the `public/mdx` folder. This is required for the slides to work with reveal.js. Do not customize the `public/mdx` folder as it will be overwritten on each build.
