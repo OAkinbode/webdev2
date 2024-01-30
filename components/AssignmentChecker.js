@@ -62,6 +62,13 @@ function AssignmentChecker({ week }) {
           `https://github.com/${account}/${repoName}/tree/main/src/app/week-${week}/page.js`
         )));
 
+    weekExists =
+      repoExists &&
+      (weekExists ||
+        (await checkUrl(
+          `https://github.com/${account}/${repoName}/blob/main/app/week-${week}/page.js`
+        )));
+
     setStatus({
       loading: false,
       error: null,
