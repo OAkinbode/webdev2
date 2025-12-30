@@ -1,24 +1,32 @@
 export function AccountLinks() {
-    const  accountCSV = process.env.NEXT_PUBLIC_STUDENT_GITHUB_USERNAMES;
+  const accountCSV = process.env.NEXT_PUBLIC_STUDENT_GITHUB_USERNAMES;
 
-    const accounts = accountCSV.split(',');
-
-    return (
-    <div>
-      {accounts.map((account) => (
-        <span>{" "}
-          <a href={`https://github.com/${account}`}>{account}</a> |
-        </span>
-      ))}
-    </div>
-    )
-
+// If the environment variable is not set or empty, show nothing or a friendly message
+if (!accountCSV || accountCSV.trim() === '') {
+return null; // or return <p>No student GitHub accounts listed yet.</p> if you prefer a message
 }
 
-# Student GitHub Accounts
+const accounts = accountCSV
+.split(',')
+.map((account) => account.trim())
+.filter((account) => account.length > 0);
 
-For this course, I encourage you to collaborate on the assignments to help you learn the material and improve your coding skill. Please use each other's public GitHub repositories to see how another student solved a problem, either as a comparison to how you solved it or as a solution for how to solve the assignment.
+// If after cleaning there are still no accounts, don't render anything
+if (accounts.length === 0) {
+return null;
+}
 
-Below is a list of all the students in the class and a link to their GitHub account. Please use this list to find other students to collaborate with. I recommend you star and/or follow other students' repositories to help them out and to help you find them again later.
-
-<AccountLinks />
+return (
+<div>
+{accounts.map((account, index) => (
+<span key={account}>
+{" "}
+<a href={`https://github.com/${account}`} target="\_blank" rel="noopener noreferrer">
+{account}
+</a>
+{index < accounts.length - 1 ? " |" : ""}
+</span>
+))}
+</div>
+);
+}
