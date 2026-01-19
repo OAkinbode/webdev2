@@ -27,11 +27,11 @@ import { Steps } from "nextra-theme-docs";
 
 In the project `app` folder, create a new **folder** called `week-2`.
 
-In the `week-2` folder, create a new **file** called `page.js`.
+In the `week-2` folder, create a new **file** called `page.ts`.
 
-In the `week-2/page.js` file, enter the following code to display a heading:
+In the `week-2/page.ts` file, enter the following code to display a heading:
 
-```jsx copy
+```tsx copy
 export default function Page() {
   return (
     <main>
@@ -45,9 +45,9 @@ Try out the new page! In the browser, navigate to `http://localhost:3000/week-2`
 
 ### Create `StudentInfo` Component
 
-In the `week-2` folder, create a file called `student-info.js`.
+In the `week-2` folder, create a file called `student-info.ts`.
 
-In the `student-info.js` file, code a React component called `StudentInfo` that renders (displays) the following information:
+In the `student-info.ts` file, code a React component called `StudentInfo` that renders (displays) the following information:
 
 - Your name
 - A link to your GitHub repository
@@ -61,7 +61,7 @@ The component should be exported as the default export.
 
 ### Render `StudentInfo` in `week-2` Page
 
-In the `week-2/page.js` file, import the `StudentInfo` component you created in the previous step.
+In the `week-2/page.ts` file, import the `StudentInfo` component you created in the previous step.
 
 Render (display) the `StudentInfo` component below the heading tag.
 
@@ -69,7 +69,7 @@ After every change, you should view the page in the browser to make sure it is w
 
 ### Edit Root Page
 
-The root page is the page that is displayed when you navigate to `http://localhost:3000/`. It is the `page.js` file in the project `/app` folder.
+The root page is the page that is displayed when you navigate to `http://localhost:3000/`. It is the `page.ts` file in the project `/app` folder.
 
 Edit the root page and remove all of the code. You will replace it with new code.
 
@@ -78,19 +78,21 @@ The root page should contain the following:
 - The heading: CPRG 306: Web Development 2 - Assignments
 - A link to the `week-2` page you created above
 
+### Deploy your application
+
+Deploy what you built to vercel. Follow this link as a guide: See [Guide: Deploying a Next.js Application](/guides-and-references/deploying-nextjs-app) for instructions.
+
+Example Output:
+
+Root page: [https://cprg306-assignments.vercel.app](https://cprg306-assignments.vercel.app)
+
+Week 2 page: [https://cprg306-assignments.vercel.app/week-2](https://cprg306-assignments.vercel.app/week-2)
+
 </Steps>
 
 ### Additional information
 
 The [Guide: Coding Workflow](/guides-and-references/workflow) may help you with the coding workflow.
-
-There is no requirement to deploy the application, but you may do so if you wish. See [Guide: Deploying a Next.js Application](/guides-and-references/deploying-nextjs-app) for instructions.
-
-### Example Output
-
-Root page: [https://cprg306-assignments.vercel.app](https://cprg306-assignments.vercel.app)
-
-Week 2 page: [https://cprg306-assignments.vercel.app/week-2](https://cprg306-assignments.vercel.app/week-2)
 
 ## Part 3: Assignment Submission
 
@@ -100,10 +102,4 @@ Ensure the following:
 
 - You have completed the previous assignment and that the instructor has your GitHub username.
 - The GitHub repository is **public** and named exactly `cprg306-assignments`.
-- The weekly folder is named exactly `week-2` (lowercase) and contains the `page.js` file.
-
----
-
-import AssignmentChecker from "/components/AssignmentChecker";
-
-<AssignmentChecker week="2" />
+- The weekly folder is named exactly `week-2` (lowercase) and contains the `page.ts` file.
