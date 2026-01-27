@@ -12,7 +12,7 @@ If you did not complete the Week 2 Assignment, complete the [Guide: How to Creat
 
 ## Part 1: Link to Week 3 Assignment
 
-Edit the project file `/app/page.js` and add a link to `week-3` in the list of links.
+Edit the project file `/app/page.ts` and add a link to `week-3` in the list of links.
 
 ## Part 2: Build the Shopping List
 
@@ -22,17 +22,17 @@ import { Steps } from "nextra-theme-docs";
 
 ### Create the Folder and Files
 
-Create the folder `/app/week-3` and create files `item.js`, `item-list.js`, and `page.js` inside it.
+Create the folder `/app/week-3` and create files `item.tsx`, `item-list.ts`, and `page.tsx` inside it.
 
 ### Build the `Item` Component
 
-In `item.js`, create a functional component named `Item`. This component should accept `name`, `quantity`, and `category` as props and display them in a list item element. Use Tailwind classes for styling.
+In `item.tsx`, create a functional component named `Item`. This component should accept `name`, `quantity`, and `category` as props and display them in a list item element. Use Tailwind classes for styling. Make sure that you use Typescript interface if you are using Typescript.
 
 ### Build the `ItemList` Component
 
-In `item-list.js`, create a functional component named `ItemList`. Inside this component, copy paste the following item objects each with `name`, `quantity`, and `category` properties. Render these items using the `Item` component you just created, passing item data as props.
+In `item-list.tx`, create a functional component named `ItemList`. Inside this component, copy paste the following item objects each with `name`, `quantity`, and `category` properties. Render these items using the `Item` component you just created, passing item data as props.
 
-```js copy
+```ts copy
 const item1 = {
   name: "milk, 4 L 🥛",
   quantity: 1,
@@ -108,11 +108,11 @@ const item12 = {
 
 ### Build the `Page` Component
 
-In `page.js`, create a functional component named `Page` that returns a `main` element wrapped around an `h1` "Shopping List" header and the `ItemList` component. Use Tailwind classes for styling.
+In `page.tsx`, create a functional component named `Page` that returns a `main` element wrapped around an `h1` "Shopping List" header and the `ItemList` component. Use Tailwind classes for styling.
 
-### Optional: Update Page Title
+### Update Page Title
 
-In the file `/app/layout.js`, edit the `title` property of the `metadata` object to display "Shopping List" as the browser document title.
+In the file `/app/layout.tsx`, edit the `title` property of the `metadata` object to display "Shopping List" as the browser document title.
 
 ### Run and Test Your App
 
@@ -142,5 +142,3 @@ Ensure the following:
 ---
 
 import AssignmentChecker from "/components/AssignmentChecker";
-
-<AssignmentChecker week="3" />
