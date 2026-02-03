@@ -18,7 +18,7 @@ If you did not complete the Week 2 Assignment, complete the [Guide: How to Creat
 
 ## Part 1: Link to Week 4 Assignment
 
-Edit the project file `/app/page.js` and add a link to `week-4` in the list of links.
+Edit the project file `/app/page.tsx` and add a link to `week-4` in the list of links.
 
 ## Part 2:
 
@@ -28,9 +28,9 @@ import { Steps } from "nextra-theme-docs";
 
 ### Create the Folder and Files
 
-Create the folder `/app/week-4` and create files `page.js` and `new-item.js` inside it.
+Create the folder `/app/week-4` and create files `page.tsx` and `new-item.tsx` inside it.
 
-Edit `page.js` to be a Next.js page component that renders the NewItem component.
+Edit `page.tsx` to be a Next.js page component that renders the NewItem component.
 
 ### Setup NewItem Component
 
@@ -94,9 +94,49 @@ In the return statement of your function, create a form that includes:
 
 - Create a submit button that triggers the handleSubmit function when clicked.
 
+###
+
 ### Style the Component
 
 Style the component using Tailwind CSS. You do not need to match the example output, but your component should be styled in a way that is visually appealing and easy to use.
+
+### Implement Advanced Validation Logic
+
+To make the form more robust and user-friendly, add a manual validation layer that provides immediate feedback.
+
+#### Create Validation State
+
+Add a new state variable to track if the user has interacted with the name field (often called a "touched" state). This prevents error messages from showing up before the user even starts typing.
+
+- Create a state variable `nameTouched` and a setter `setNameTouched`, initialized to `false`.
+
+#### Update the Name Field Input
+
+Modify your Name input field to trigger the "touched" state and apply conditional styling:
+
+- Add an `onBlur` event handler that sets `setNameTouched(true)` when the user clicks out of the field.
+- Use a template literal for the `className` to change the border color to red if `name` is empty and `nameTouched` is true.
+
+#### Add Conditional Error Message
+
+Add a logic-based message below the Name input:
+
+- Render a `<p>` tag with a red text color (e.g., `text-red-500`) that only appears if the `name` is empty and `nameTouched` is true.
+
+#### Strengthen the Submission Handler
+
+Update your `handleSubmit` function to ensure no invalid data is processed:
+
+- Before creating the `item` object, add a check: `if (!name || name.length < 2)`.
+- If the check fails, prevent the rest of the function from running (e.g., using `return;`) and notify the user via a specific error message.
+
+#### Disable the Submit Button
+
+Improve the User Experience (UX) by preventing clicks on invalid forms:
+
+- Add the `disabled` attribute to your submit button.
+- The button should be disabled if `name` is empty or if the form is otherwise incomplete.
+- Use Tailwind classes like `disabled:bg-gray-400` and `disabled:cursor-not-allowed` to visually indicate the button is inactive.
 
 ### Test Your Component
 
@@ -104,11 +144,7 @@ Ensure that when the form is filled and submitted, an alert is displayed with th
 
 </Steps>
 
-### Example Output
-
-https://cprg306-assignments.vercel.app/week-4
-
-## Part 3: Assignment Submission
+## Part 4: Assignment Submission
 
 The instructor will be able to find your assignment in your GitHub repository. Make sure you have committed and pushed your changes to GitHub before the assignment deadline.
 
