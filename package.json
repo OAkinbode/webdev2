@@ -5,7 +5,7 @@
   "scripts": {
     "copy-mdx": "node scripts/copy-mdx-files.js",
     "dev": "npm run copy-mdx && next dev",
-    "build": "npm run copy-mdx && next build",
+    "build": "npx socket patch GHSA-g4xw-jxrg-5f6m && npm run copy-mdx && next build",
     "start": "next start"
   },
   "repository": {
