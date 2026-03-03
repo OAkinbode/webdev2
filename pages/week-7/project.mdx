@@ -1,0 +1,366 @@
+# Project
+
+## Introduction
+
+For the project in Web Development 2, you will design and build a complete web application from scratch over a six-week period. Projects are intentionally scoped to be challenging — you are expected to use all available tools, including AI coding assistants, to help you build. What matters is that you understand what you have built, can explain your decisions, and can demonstrate mastery of the competencies below.
+
+You are encouraged to build something useful and meaningful — something you would be proud to keep running and show to future employers.
+
+You will be responsible for the entire development process, from idea selection to deployment, using an agile methodology across three one-week sprints.
+
+### What Your Project Must Demonstrate
+
+Every project, regardless of which idea you choose, must demonstrate competency across these seven areas:
+
+| #   | Competency Area                | Description                                                                                             |
+| --- | ------------------------------ | ------------------------------------------------------------------------------------------------------- |
+| 1   | **Next.js Fundamentals**       | Proper use of the App Router, file-based routing, server vs. client components, and Next.js conventions |
+| 2   | **UI/UX Design**               | A polished, responsive, and user-friendly interface with thoughtful design decisions                    |
+| 3   | **Authentication**             | Secure user authentication with protected routes and session management                                 |
+| 4   | **Full-Stack API Development** | Next.js API routes or Route Handlers used for backend logic                                             |
+| 5   | **Third-Party Database**       | Persistent data storage using Firebase, Supabase, PlanetScale, or similar                               |
+| 6   | **RESTful API Integration**    | Consumption of at least one external REST API (most viable application ideas require more)              |
+| 7   | **Deployment**                 | A live, publicly accessible production deployment via Vercel                                            |
+
+---
+
+## Project Ideas
+
+Choose **one** of the following project ideas. Each is scoped to require all seven competency areas above. You may also propose your own idea — but it must be approved and must address all seven competencies.
+
+---
+
+### Option A: E-Commerce Store
+
+**Overview**: Build a full-featured online store where customers can browse products, manage a cart, and check out. An admin panel allows store owners to manage inventory.
+
+**Key Features**:
+
+- Product listings with search, filtering, and sorting
+- Shopping cart with persistent state per user
+- User authentication with customer and admin roles
+- Admin dashboard: add, edit, and delete products
+- Integration with a payment or checkout API (e.g. Stripe test mode)
+- Order history per user stored in a database
+- Responsive storefront UI with smooth UX including loading states, empty states, and error handling
+
+**External API Suggestions**: Stripe (payments), Cloudinary (image uploads), or a product data API
+
+---
+
+### Option B: Event Booking Platform
+
+**Overview**: Build a platform where organizers can create and manage events, and attendees can discover, register for, and manage their bookings.
+
+**Key Features**:
+
+- Public event listings with search and category filtering
+- User authentication with organizer and attendee roles
+- Organizer dashboard: create, edit, and cancel events
+- Attendee dashboard: register for events, view and cancel bookings
+- Real-time seat availability tracking
+- Email confirmation on booking via a transactional email API
+- Map integration to show event locations
+
+**External API Suggestions**: SendGrid or Resend (email), Google Maps API, Ticketmaster API
+
+---
+
+### Option C: Real Estate Listing Platform
+
+**Overview**: Build a property listing and search platform where agents can post listings and prospective buyers or renters can browse, save, and inquire about properties.
+
+**Key Features**:
+
+- Property listings with advanced filtering (price range, bedrooms, location, type)
+- User authentication with agent and buyer/renter roles
+- Agent dashboard: create, update, and remove listings with image uploads
+- Saved and favorited listings per user stored in a database
+- Contact form or inquiry system tied to listings
+- Map-based browsing of properties
+- Mortgage or rent affordability calculator using a financial API
+
+**External API Suggestions**: Google Maps, RapidAPI real estate endpoints, Cloudinary for images
+
+---
+
+### Option D: Learning Management System
+
+**Overview**: Build a platform where instructors can publish courses and students can enroll, track progress, and complete quizzes.
+
+**Key Features**:
+
+- Course catalog with search and category browsing
+- User authentication with instructor and student roles
+- Instructor dashboard: create courses, add lessons, publish and unpublish content
+- Student dashboard: enroll in courses, track progress, complete lessons
+- Quiz or assessment feature with auto-grading
+- Progress stored persistently per user in a database
+- Certificate generation or completion badge on course finish
+
+**External API Suggestions**: YouTube Data API (embed course videos), an AI API for quiz generation, or a cloud storage API
+
+---
+
+### Option E: Health and Fitness Tracker
+
+**Overview**: Build a personal health tracking app where users can log workouts, meals, and wellness data and visualize trends over time.
+
+**Key Features**:
+
+- User authentication with personalized dashboards
+- Workout logger: log exercises, sets, reps, and duration
+- Nutrition logger: search foods and log daily intake using a nutrition API
+- Data visualization: charts showing progress over time (weight, calories, workout frequency)
+- Goal-setting with progress tracking stored in a database
+- Social feature: share workouts or follow friends' progress
+- Streaks and achievement badges
+
+**External API Suggestions**: Nutritionix or Open Food Facts (nutrition data), ExerciseDB (exercise library)
+
+---
+
+### Option F: Community Forum and Discussion Platform
+
+**Overview**: Build a Reddit-style community platform where users can post, comment, vote, and moderate topic-based communities.
+
+**Key Features**:
+
+- User authentication with profiles and avatars
+- Create and join topic-based communities
+- Post creation with rich text or markdown support
+- Nested comment threads
+- Upvote and downvote system with real-time score updates
+- Moderator role per community (delete posts, manage members)
+- Search across posts and communities
+- Content moderation using an AI or moderation API
+
+**External API Suggestions**: OpenAI Moderation API, Cloudinary (image posts), a markdown rendering library
+
+---
+
+## Proposing Your Own Idea
+
+If none of the above excites you, you may propose a custom project. It must:
+
+- Be approved by the instructor before you begin
+- Demonstrate **all seven competency areas**
+- Be scoped appropriately — not too simple, not a full startup product
+- Be submitted as part of Phase 1 planning
+
+---
+
+## Project Phases
+
+| Phase            | Description                                          |
+| ---------------- | ---------------------------------------------------- |
+| Phase 1          | Project Selection, Planning, and Design              |
+| Phase 2 Sprint 1 | Core features and data model                         |
+| Phase 2 Sprint 2 | Authentication, API routes, and database integration |
+| Phase 2 Sprint 3 | UI polish, external APIs, and feature completion     |
+| Phase 3          | Deployment, Self-Reflection, and Showcase            |
+
+---
+
+## Phase 1: Project Selection, Planning, and Design
+
+### 1. Individual or Group
+
+**Individual Projects**: If you are alone in your group, you are solely responsible for every aspect of the application. This is a great opportunity to prove independent capability.
+
+**Group Projects**: Groups must demonstrate significantly greater scope or depth. A group project should have more features, more complex data models, or a higher level of polish than an individual project. Each group member must have a clearly defined, substantial role. Each group member is required to make at least 3 commits to the shared group GitHub repo.
+
+### 2. AI Usage Policy
+
+You are **encouraged** to use AI coding assistants (GitHub Copilot, Claude, ChatGPT, etc.) to help you build. This is a real-world skill. However:
+
+- You must be able to **explain every part of your codebase** in the showcase.
+- You must **understand the code you submit** — inability to explain your work will result in significant grade deductions.
+- AI cannot replace your thinking on architecture, design decisions, and debugging.
+
+### 3. Technology Stack
+
+Your project must be built with **Next.js (App Router)**. Beyond that, you are free to choose supporting technologies. Recommended stack:
+
+| Layer          | Recommended Options                                      |
+| -------------- | -------------------------------------------------------- |
+| Styling        | Tailwind CSS + shadcn/ui, or any component library       |
+| Authentication | Auth0, Supabase, or Firebase Auth                        |
+| Database       | Firebase Firestore, Supabase, PlanetScale, MongoDB Atlas |
+| File Storage   | Cloudinary, Supabase Storage, Firebase Storage           |
+| Deployment     | Vercel (required)                                        |
+
+---
+
+## Submission Instructions
+
+This project is submitted in two stages on D2L.
+
+### Phase 1 Submission — D2L: _Project Phase 1_ Assignment
+
+Submit your Phase 1 planning work before development begins. Include the following:
+
+- **Group**: Yes/No — if yes, list names, GitHub usernames, and each member's role
+- **Project Name**: Name of your web app
+- **Selected Option**: Which project option (A–F) or your approved custom idea
+- **GitHub**: GitHub username and repository link
+- **URL**: Live deployed URL of your initial Next.js app on Vercel
+- **Description**: Problem being solved, target audience, and technologies used
+- **Development Plan**: Feature breakdown per sprint
+- **Architecture**: Pages, components, API routes, and data models
+
+### Phase 2 & 3 Submission — D2L: _Project Phase 2 & 3_ Assignment
+
+Submit your completed project after the showcase. Include the following:
+
+- **GitHub**: Link to your final GitHub repository
+- **URL**: Live deployed URL of your completed app on Vercel
+- **Self-Reflection**: Your written self-reflection document
+
+---
+
+## Grading Rubric
+
+Your project is graded across three phases. **Total: 50 points**.
+
+---
+
+### Phase 1 — Planning and Design (10 points)
+
+| Milestone                                                                        | Full Marks | Partial | Minimal |
+| -------------------------------------------------------------------------------- | ---------- | ------- | ------- |
+| **Project proposal** — clear problem statement, target user, and feature list    | 3          | 1–2     | 0       |
+| **Architecture document** — pages, components, data models, API routes described | 3          | 1–2     | 0       |
+| **Sprint plan** — realistic week-by-week breakdown with assigned features        | 2          | 1       | 0       |
+| **GitHub repo + Vercel setup** — repo created, initial Next.js app deployed      | 2          | 1       | 0       |
+
+---
+
+### Phase 2 — Development (30 points)
+
+Graded across seven competency areas. Each sprint submission is reviewed; final grades use the best state of the deployed app at the end of Sprint 3.
+
+#### 1. Next.js Fundamentals (5 points)
+
+| Criteria                                                   | Points |
+| ---------------------------------------------------------- | ------ |
+| Correct use of file-based routing and dynamic routes       | 2      |
+| Appropriate use of Server Components and Client Components | 1      |
+| Proper use of loading.tsx, error.tsx, and layout.tsx       | 1      |
+| Code is clean, organized, and follows Next.js conventions  | 1      |
+
+#### 2. UI/UX Design (5 points)
+
+| Criteria                                                                             | Points |
+| ------------------------------------------------------------------------------------ | ------ |
+| Responsive design — works well on mobile and desktop                                 | 2      |
+| Visual polish — consistent color scheme, typography, and spacing                     | 1      |
+| User experience — intuitive navigation, loading states, error messages, empty states | 1      |
+| Accessibility — semantic HTML, proper contrast, keyboard-navigable                   | 1      |
+
+#### 3. Authentication (5 points)
+
+| Criteria                                                | Points |
+| ------------------------------------------------------- | ------ |
+| Users can sign up, log in, and log out                  | 2      |
+| Protected routes — unauthenticated users are redirected | 1      |
+| Role-based access (e.g., admin vs. regular user)        | 1      |
+| Session persistence and secure handling                 | 1      |
+
+#### 4. Full-Stack API Development (5 points)
+
+| Criteria                                                        | Points |
+| --------------------------------------------------------------- | ------ |
+| API routes or Route Handlers implemented for backend logic      | 2      |
+| Proper HTTP methods (GET, POST, PUT, DELETE) used appropriately | 1      |
+| Error handling and appropriate HTTP status codes returned       | 1      |
+| API is consumed correctly from the frontend and backend         | 1      |
+
+#### 5. Third-Party Database (5 points)
+
+| Criteria                                                       | Points |
+| -------------------------------------------------------------- | ------ |
+| Database is connected and used for persistent data storage     | 2      |
+| CRUD operations (Create, Read, Update, Delete) are implemented | 1      |
+| Data is properly structured and relationships are modeled      | 1      |
+| Database rules and access control are configured appropriately | 1      |
+
+#### 6. RESTful API Integration (3 points)
+
+| Criteria                                          | Points |
+| ------------------------------------------------- | ------ |
+| At least one external REST API is integrated      | 1      |
+| API data is fetched server-side where appropriate | 1      |
+| API errors are handled gracefully                 | 1      |
+
+#### 7. Deployment (2 points)
+
+| Criteria                                                              | Points      |
+| --------------------------------------------------------------------- | ----------- |
+| Application is live on Vercel and publicly accessible                 | 1           |
+| CI/CD is set up — pushes to GitHub auto-deploy to Vercel              | 1           |
+| Environment variables are properly configured and not exposed in code | 0.5 (bonus) |
+
+---
+
+### Phase 3 — Reflection and Showcase (10 points)
+
+#### Self-Reflection (4 points)
+
+| Criteria                                                             | Points |
+| -------------------------------------------------------------------- | ------ |
+| Honestly identifies what went well and what was challenging          | 1      |
+| Reflects on specific technical decisions and why they were made      | 1      |
+| Discusses AI tool usage — what was helpful, what required correction | 1      |
+| Identifies what you would do differently with more time              | 1      |
+
+#### Showcase and Demo (6 points)
+
+| Criteria                                                   | Points |
+| ---------------------------------------------------------- | ------ |
+| Live demo runs without errors                              | 1      |
+| All major features are demonstrated                        | 1      |
+| Can explain the architecture and tech stack clearly        | 1      |
+| Can explain and walk through key sections of the code      | 2      |
+| Responds well to instructor questions about implementation | 1      |
+
+import { Callout } from "nextra-theme-docs";
+
+<Callout type="error" emoji="⚠️">
+  If you cannot explain a section of your code during the showcase, marks for
+  that section will be reduced — regardless of whether the feature works.
+  Understanding your own project is a core requirement.
+</Callout>
+
+---
+
+### Grade Summary
+
+| Phase                                | Points |
+| ------------------------------------ | ------ |
+| Phase 1 — Planning and Design        | 10     |
+| Phase 2 — Next.js Fundamentals       | 5      |
+| Phase 2 — UI/UX Design               | 5      |
+| Phase 2 — Authentication             | 5      |
+| Phase 2 — Full-Stack API Development | 5      |
+| Phase 2 — Third-Party Database       | 5      |
+| Phase 2 — RESTful API Integration    | 3      |
+| Phase 2 — Deployment                 | 2      |
+| Phase 3 — Self-Reflection            | 4      |
+| Phase 3 — Showcase                   | 6      |
+| **Total**                            | **50** |
+
+---
+
+## Project Setup: Next.js, GitHub, and Vercel
+
+After finalizing your project idea and receiving approval, set up your development environment:
+
+- [Guide: How to Create a New Next.js Project](/guides-and-references/creating-new-nextjs-project)
+- [Guide: Deploying a Next.js App using Vercel](/guides-and-references/deploying-nextjs-app)
+
+If working in a group, add all members as collaborators to the GitHub repo via Settings then Collaborators.
+
+### Continuous Integration and Deployment
+
+Every push to your main GitHub branch should automatically deploy to Vercel. Each sprint must end with a working, deployed build. A broken deployment at sprint review will result in deductions.
