@@ -228,17 +228,13 @@ Have a fantastic week and hope to see you in class!
 
 ### Week 9
 
-Week 9: Midterm Exam and Project
+Week 9: Project phase 1
 
 Lots to do this week! Here's what's happening.
 
-1. Midterm Exam.
-
-The midterm exam is now available. Please go to our Brightspace shell and complete the exam there. You have until Nov. 6, 2023 to finish the exam.
-
 2. Project: Phase 1 Project Selection, Planning, and Design
 
-Review the [details of the project](https://webdev2.warsylewicz.ca/week-9/project) and submit this [MS Form](https://forms.office.com/r/58ApykiZEK) with your project details. A group only needs to submit one form.
+Review and submit your project details. A group only needs to submit one form.
 
 3. Week 8 Assignment
 
